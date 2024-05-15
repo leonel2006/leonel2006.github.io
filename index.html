@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro e Login de Usuário</title>
+    <!-- Adicionando Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container form {
+            margin-bottom: 20px;
+        }
+        .message {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Registro de Usuário</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="first_name">Nome:</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Sobrenome:</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+            <div class="message" id="registerMessage"></div>
+
+            <h2>Login de Usuário</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login_email">Email:</label>
+                    <input type="email" class="form-control" id="login_email" name="login_email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login_password">Senha:</label>
+                    <input type="password" class="form-control" id="login_password" name="login_password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="message" id="loginMessage"></div>
+        </div>
+    </div>
+
+    <!-- Adicionando jQuery e Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
